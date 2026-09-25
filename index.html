@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Futuro - Orientação de Carreira</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Meu Futuro</h1>
+            <p>Descubra caminhos profissionais que combinam com seus interesses.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Tela inicial -->
+        <section id="inicio" class="card">
+            <div class="icone">🎓</div>
+
+            <h2>Qual caminho combina com você?</h2>
+
+            <p>
+                Responda algumas perguntas sobre seus interesses,
+                habilidades e preferências. No final, apresentaremos
+                algumas áreas profissionais que podem combinar com o
+                seu perfil.
+            </p>
+
+            <p class="observacao">
+                <strong>Importante:</strong> o resultado é apenas uma
+                orientação inicial. Ele não determina qual profissão
+                você deve escolher.
+            </p>
+
+            <button id="btnIniciar" class="btn">
+                Começar orientação
+            </button>
+        </section>
+
+        <!-- Questionário -->
+        <section id="questionario" class="card hidden">
+
+            <div class="progresso-container">
+                <div class="progresso-info">
+                    <span id="numeroPergunta">Pergunta 1</span>
+                    <span id="contador">1 / 8</span>
+                </div>
+
+                <div class="barra">
+                    <div id="barraProgresso"></div>
+                </div>
+            </div>
+
+            <div id="perguntaContainer">
+
+                <h2 id="pergunta"></h2>
+
+                <div id="opcoes" class="opcoes">
+                    <!-- Opções inseridas pelo JavaScript -->
+                </div>
+
+            </div>
+
+            <div class="navegacao">
+                <button id="btnVoltar" class="btn btn-secundario">
+                    Voltar
+                </button>
+
+                <button id="btnProxima" class="btn" disabled>
+                    Próxima
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Resultado -->
+        <section id="resultado" class="card hidden">
+
+            <div class="icone">✨</div>
+
+            <h2>Seu perfil de interesses</h2>
+
+            <p id="descricaoPerfil"></p>
+
+            <h3>Áreas que podem despertar seu interesse</h3>
+
+            <div id="resultados" class="resultados">
+                <!-- Resultados inseridos pelo JavaScript -->
+            </div>
+
+            <div class="aviso-resultado">
+                <strong>Uma sugestão, não uma sentença.</strong>
+                <p>
+                    Existem muitas possibilidades profissionais.
+                    Use este resultado como ponto de partida para
+                    pesquisar cursos, profissões e conversar com
+                    professores, familiares e profissionais das áreas
+                    que despertarem seu interesse.
+                </p>
+            </div>
+
+            <button id="btnReiniciar" class="btn">
+                Refazer questionário
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Meu Futuro - Projeto de orientação de carreira</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
